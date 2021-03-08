@@ -40,7 +40,7 @@
     float: right;
   display: inline;
   cursor: pointer;
-  position: fixed;
+  position: sticky;
 
 
 }
