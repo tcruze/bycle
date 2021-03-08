@@ -41,6 +41,7 @@
   display: inline;
   cursor: pointer;
   position: sticky;
+  position: fixed;
 
 
 }
