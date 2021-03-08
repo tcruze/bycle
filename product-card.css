@@ -39,7 +39,7 @@
     float: right;
   display: inline;
   cursor: pointer;
-  position: absolute;
+  position: relative;
 
 
 }
