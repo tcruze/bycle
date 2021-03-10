@@ -1,5 +1,5 @@
 .dropdown-content {
-  display: flex;
+
   border-radius:25px;
   margin-top:55px;
   margin-left:70%;
@@ -13,7 +13,7 @@
 }
 
 .dropdown-content a {
-  display: flex;
+  
   position:relative;
   color: white;
   padding: 16px 36px;
@@ -122,7 +122,7 @@ to {opacity: 1}
 }
 .head
 {
-  
+
 margin: auto;
 border-radius:25px;
 border: 1px solid #d22435;
