@@ -7,11 +7,51 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title></title>
     <style media="screen">
+.search{
+  float: right;
+  margin-right:  500px;
+}
+
+form.example input[type=text] {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+padding: 10px;
+font-size: 17px;
+border: 1px solid grey;
+margin-left: -5%;
+background: #f1f1f1;
+}
+
+form.example button {
+border-top-right-radius: 25px;
+border-bottom-right-radius: 25px;
+background: #2196F3;
+margin-left: -10px;
+color: white;
+padding-left: -5px;
+padding: 10px;
+font-size: 17px;
+border: 1px solid grey;
+border-left: none;
+cursor: pointer;
+}
+
+form.example button:hover {
+background: #0b7dda;
+}
+
+form.example::after {
+content: "";
+clear: both;
+display: table;
+}
+
+
     .cart{
 
       border-radius: 25px;
       padding: 5px 25px 5px;
-      background-color: white;
+      background:transition;
       float: right;
       margin-top: px;
       margin-right: 30px;
@@ -74,39 +114,11 @@
       opacity: 0.7;
     }
 
-    .container {
-      margin-right: 20px;
-        float: right;
-      display: inline;
-      cursor: pointer;
-      position: sticky;
 
 
 
-    }
 
-    .bar1,
-    .bar2, .bar3 {
-      border-radius: 50px;
-      width: 35px;
-      height: 5px;
-      background-color: #333;
-      margin: 6px 0;
-      transition: 0.4s;
 
-    }
-
-    .change .bar1 {
-      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-      transform: rotate(-45deg) translate(-9px, 6px);
-    }
-
-    .change .bar2 {opacity: 0;}
-
-    .change .bar3 {
-      -webkit-transform: rotate(45deg) translate(-8px, -8px);
-      transform: rotate(45deg) translate(-8px, -8px);
-    }
 
 
 
@@ -124,6 +136,23 @@
           <div class="bar2"></div>
           <div class="bar3"></div>
           </div>
+          <div style="margin-right:5px" class="cart">
+                <span  id="counter">0</span>
+                <i  class="fa fa-shopping-cart" ></i>
+          </div>
+           <img style="float:right ;display:block" id="btn"src="filter.jpg" alt="filter"></button>
+           <div class="search">
+                    <form class="example"action="/action_page.php">
+                        <input type="text"
+                            placeholder=" Search....."
+                            name="search">
+                        <button>
+                            <i class="fa fa-search"
+                                style="font-size: 18px;">
+                            </i>
+                        </button>
+                    </form>
+                </div>
           <div >
         <div id="myDropdown" class="dropdown-content">
           <a href="index.html">Home</a>
@@ -131,28 +160,8 @@
           <a href="#about">About</a>
           <a href="#contact">Contact Us</a>
         </div>
-        </div>
-<div class="container">
-  <img src="filter.jpg" alt="filter">
+      </div>
 
-</div>
-
-        <div class="cart">
-
-              <span  id="counter">0</span>
-
-              <i class="fa fa-shopping-cart" ></i>
-
-        </div>
-
-        <div class="topnav">
-          <div class="search-container">
-            <form  action="/action_page.php">
-              <input type="text" placeholder="eg.hercules.." name="search">
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-          </div>
-        </div>
 
 
     </h2>
@@ -300,6 +309,50 @@
 </section>
 </div>
 
+<div id="myModal" class="modal">
+<div class="modal-content">
+
+  <span class="close">&times;</span>
+  <div class="card">
+
+
+  <div class="fill">
+
+<link rel="stylesheet" href="cart.css">
+  <form class="con" action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option style="padding:200px" value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select><br><br>
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option style="padding:300px" value="volvo">..</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select><br><br>
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option style="padding:200px" value="volvo">Vohgyufgfgfgeufguilvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select><br><br>
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option style="padding:200px" value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select><br><br>
+  <input type="submit">
+</form>
+</div></div></div>
+</div>
+
 
     <script>
 
@@ -337,7 +390,31 @@ function adding(){
       }//menu
 
 
+      // Get the modal
+      var modal = document.getElementById("myModal");
 
+      // Get the button that opens the modal
+      var btn = document.getElementById("btn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on the button, open the modal
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }//modal
 
 
 
