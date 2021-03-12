@@ -59,7 +59,7 @@
 float: right;
   border-radius:25px;
   margin-top:55px;
-  margin-left:1000px;
+  margin-left:60%;
   display: none;
   position: absolute;
   background-color: #140000;
@@ -88,7 +88,7 @@ float: right;
 
 .about
 {
-  display: flex;
+  display: flx;
   border-radius:25px;
 border: 1px ;
 background-image: url("about.jpg");
@@ -114,7 +114,7 @@ height: auto;
 
 /* Slideshow container */
 .slideshow-container {
-position:fixed;
+
 max-width: 100%;
 position: relative;
 margin: auto;
