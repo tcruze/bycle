@@ -56,10 +56,10 @@
 
 
 .dropdown-content {
-
+float: right;
   border-radius:25px;
   margin-top:55px;
-  margin-left:70%;
+  margin-left:60rem;
   display: none;
   position: absolute;
   background-color: #140000;
