@@ -179,8 +179,8 @@ to {opacity: 1}
 position: fixd;
 margin: auto;
 border-radius:25px;
-border: 1px solid #d22435;
-background-color: #d22435 ;
+border: 3px solid black;
+background-color: transition ;
 padding-top: 5px;
 padding-right: 30px;
 padding-bottom: 50px;
