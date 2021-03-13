@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title></title>
     <style media="screen">
+
     .h1{
       opacity: 0.7;
       margin-top: -10px;
@@ -96,12 +97,17 @@ display: table;
       position: relative;
       width: auto;
       border-radius: 30px;
-      background-color: #fd467d;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      background:transition;
+      box-shadow: 10px 8px 8px 10px rgba(0, 0, 0, 0.2);
       max-width: 100%;
       margin: 20px;
+      color: blue;
       text-align: center;
       font-family: arial;
+      cursor: pointer;
+    }
+    .card:hover{
+      background-color: #00c4b5;
     }
 
     .price {
@@ -126,7 +132,7 @@ display: table;
     }
 
     .card button:hover {
-      background-color: #eb5a46;
+      background-color:#0072b5;
       opacity: 0.7;
     }
 
@@ -140,8 +146,8 @@ display: table;
 
     </style>
   </head>
-  <body style="background-image: linear-gradient(120deg,#014283, #c04283);">
-    <h1 class="h1">𝓑𝓨𝓚𝓛𝓔</h1>
+  <body style="background-image: linear-gradient(110deg,#00698b,green);">
+    
     <link rel="stylesheet" href="style.css">
     <h2>
       <div class="head">
@@ -153,14 +159,17 @@ display: table;
           <div class="bar2"></div>
           <div class="bar3"></div>
           </div>
+<div class="container">
+
 
           <div style="margin-right:20px;" class="cart">
                 <span  id="counter">0</span>
                 <i  class="fa fa-shopping-cart" ></i>
-          </div>
+          </div></div>
 
-            <i style="float:right ;display:block;margin-top:10px;cursor:pointer;margin-right:20px" id="btn"class="fa fa-filter" aria-hidden="true"></i>
-          <div >
+
+            <i style="float:right ;display:block;margin-top:10px;cursor:pointer;margin-right:18px" id="btn"class="fa fa-filter" aria-hidden="true"></i>
+
             <div class="search">
                      <form class="example"action="/action_page.php">
                          <input type="text"
@@ -220,7 +229,11 @@ display: table;
 
     <p></p>
 
-    </div>
+  </div><br>
+  <div class="">
+    <h3 style="border-radius:25px;padding:10px;background:#0072b5;text-align:center">products...</h3>
+
+  </div>
 
 
     <br>
@@ -234,14 +247,16 @@ display: table;
       <tr>
         <td>
 
+<div class="card-back">
+
 
             <div class="card">
             <img src="p3.jpg" alt="hercules" style="width:85% ">
             <h1>Product Name</h1>
             <p class="price">price :Rs,1999/-</p>
-            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <p>Some text about the product... </p>
             <p><button id="add">Add to Cart</button></p>
-          </div>
+          </div></div>
         </td>
     <br>
 
@@ -250,7 +265,7 @@ display: table;
           <img src="p3.jpg" alt="hercules" style="width:85%">
           <h1>Product Name</h1>
           <p class="price">price :Rs,1999/-</p>
-          <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+          <p>Some text about the product...</p>
           <p><button id="add1">Add to Cart</button></p>
         </div></td></tr>
 
@@ -259,7 +274,7 @@ display: table;
           <img src="p3.jpg" alt="Norco" style="width:85%">
           <h1>Product Name</h1>
           <p class="price">price :Rs,1999/-</p>
-          <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+          <p>Some text about the product...</p>
           <p><button id="add2">Add to Cart</button></p>
         </div></td>
 
@@ -270,7 +285,7 @@ display: table;
             <img src="p3.jpg" alt="Norco" style="width:85%">
             <h1>Product Name</h1>
             <p class="price">price :Rs,1999/-</p>
-            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <p>Some text about the product...</p>
             <p><button id="add3">Add to Cart</button></p>
           </div>
         </td>
@@ -283,7 +298,7 @@ display: table;
             <img src="p3.jpg" alt="hercules" style="width:85% ">
             <h1>Product Name</h1>
             <p class="price">price :Rs,1999/-</p>
-            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <p>Some text about the product...</p>
             <p><button id="add4">Add to Cart</button></p>
           </div>
         </td>
@@ -295,7 +310,7 @@ display: table;
             <img src="p3.jpg" alt="hercules" style="width:85% ">
             <h1>Product Name</h1>
             <p class="price">price :Rs,1999/-</p>
-            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <p>Some text about the product...</p>
             <p><button id="add5">Add to Cart</button></p>
           </div>
         </td></tr>
@@ -307,7 +322,7 @@ display: table;
             <img src="p3.jpg" alt="hercules" style="width:85% ">
             <h1>Product Name</h1>
             <p class="price">price :Rs,1999/-</p>
-            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <p>Some text about the product...</p>
             <p><button id="add6">Add to Cart</button></p>
           </div>
         </td>
@@ -319,7 +334,7 @@ display: table;
             <img src="p3.jpg" alt="hercules" style="width:85% ">
             <h1>Product Name</h1>
             <p class="price">price :Rs,1999/-</p>
-            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <p>Some text about the product...</p>
             <p><button id="add7">Add to Cart</button></p>
           </div>
         </td>
@@ -339,35 +354,39 @@ display: table;
 
 <link rel="stylesheet" href="cart.css">
   <form class="con" action="/action_page.php">
-  <label for="cars">Choose a car:</label>
-  <select id="cars" name="cars">
-    <option style="padding:200px" value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
+  <label style="text-align:left"for="location">Location:</label>
+  <select id="location" name="location">
+    <option  value="TamilNadu">TamilNadu</option>
+    <option value="Kerala">Kerala</option>
+    <option value="puducherry">puducherry</option>
+    <option value="karnataka">karnataka</option>
+    <option value="Andhra pradesh">Andhra pradesh</option>
+    <option value="etc">...</option>
   </select><br><br>
-  <label for="cars">Choose a car:</label>
-  <select id="cars" name="cars">
-    <option style="padding:300px" value="volvo">..</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
+  <label for="brand">Brand:</label>
+  <select id="brand" name="Brand">
+    <option value=""> </option>
+    <option style="padding:200px" value="hercules">Herclues</option>
+    <option value="Norco">Norco</option>
+    <option value="hero">Hero</option>
+    <option value="Mach city">Mach city</option>
   </select><br><br>
-  <label for="cars">Choose a car:</label>
-  <select id="cars" name="cars">
-    <option style="padding:200px" value="volvo">Vohgyufgfgfgeufguilvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
+  <label for="price">Price:</label>
+  <select id="price" name="price">
+    <option style="padding:200px" value=""></option>
+    <option value="<20000">Rs 20,000 above</option>
+    <option value="10,000 - 20,000">Rs 10,000 - 20,000</option>
+    <option value="5,000 - 10,000">Rs 5,000 - 10,000</option>
+    <option value="0 - 5,000">Rs 0 - 5,000</option>
   </select><br><br>
-  <label for="cars">Choose a car:</label>
-  <select id="cars" name="cars">
-    <option style="padding:200px" value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
+  <label for="color">Choose color:</label>
+  <select id="color" name="color">
+    <option style="padding:200px" value="black">Black</option>
+    <option value="Blue">Blue</option>
+    <option value="mate black">Mate black</option>
+    <option value="yellow">Yellow</option>
   </select><br><br>
-  <input type="submit">
+  <input style="font-size:16px"type="submit">
 </form>
 </div></div></div>
 </div>
