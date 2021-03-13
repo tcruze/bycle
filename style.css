@@ -1,12 +1,30 @@
+
+
+
 .fill{
+
+  position: relative;
+  width: auto;
+  border-radius: 30px;
+  background:transition;
+  box-shadow: 2px 8px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  margin: 20px;
+  text-align: center;
+  font-family: arial;
+  cursor: pointer;
   margin: auto;
-  border-radius:25px;
-  border: 1px solid #d22435;
-  background-color: #d22435 ;
+  border: 1px solid #0072b5;
+  background-color: #0072b5 ;
   padding-top: 5px;
   padding-right: 5px;
   padding-bottom: 5px;
   padding-left: 5px;
+}
+.fill label{
+  color: white;
+  font-size: 20px;
+  text-align: left;
 }
 
 
@@ -29,11 +47,10 @@
 .modal-content {
   border-radius: 25px;
   background: transition;
-  margin: 06% auto; /* 15% from the top and centered */
-  margin-left: 50%;
+  margin: 7% auto; /* 15% from the top and centered */
   padding: 5px;
-  border: 3px solid #888;
-  width: 40%; /* Could be more or less, depending on screen size */
+  border: 2px solid white;
+  width: 50%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -59,7 +76,7 @@
 float: right;
   border-radius:25px;
   margin-top:55px;
-  margin-left:60%;
+  margin-left:70%;
   display: none;
   position: absolute;
   background-color: #140000;
@@ -114,7 +131,6 @@ height: auto;
 
 /* Slideshow container */
 .slideshow-container {
-
 max-width: 100%;
 position: relative;
 margin: auto;
@@ -176,10 +192,10 @@ to {opacity: 1}
 }
 .head
 {
-position: fixd;
+
 margin: auto;
 border-radius:25px;
-border: 3px solid black;
+border: 2px solid white;
 background-color: transition ;
 padding-top: 5px;
 padding-right: 30px;
@@ -203,6 +219,11 @@ padding-left: 80px;
 
 
 
+}
+.container:hover{
+  padding: 5px;
+  border-radius: 50px;
+  background-color:#00b88b;
 }
 
 .bar1,
