@@ -9,13 +9,13 @@
     <style media="screen">
 
     .h1{
-      opacity: 0.7;
+
       margin-top: -10px;
       border-bottom-left-radius: 25px;
       border-bottom-right-radius: 25px;
-      background: linear-gradient(110deg,black,blue);
-      padding-bottom: 80px;
-      padding-top: 30px;
+      background: transition;
+      margin-left: 45%;
+      margin-right: 50%;
       font-size: 60px;
       color: white;
       font-style: italic;
@@ -136,15 +136,8 @@ display: table;
       opacity: 0.7;
     }
 
-
-
-
-
-
-
-
-
     </style>
+    <h1 class="h1">BYCLE</h1>
   </head>
   <body style="background-image: linear-gradient(110deg,#00698b,#00b373);">
 
@@ -164,7 +157,7 @@ display: table;
 
           <div style="margin-right:20px;" class="cart">
                 <span  id="counter">0</span>
-                <i  class="fa fa-shopping-cart" ></i>
+                <i  class="fa fa-shopping-cart" onclick="location.href='cart.html'" ></i>
           </div></div>
 
 
@@ -224,10 +217,10 @@ display: table;
     </div>
 </section>
     <br>
-    <div class="about" style="text-align:justify">
-      <h3 style="font-size:32px  ">about.....</h3>
+    <div class="about" >
+      <h3 style="font-size:32px ">about.....</h3>
 
-    <p></p>
+    <p >something about new products...</p>
 
   </div><br>
   <div class="">
@@ -394,7 +387,7 @@ display: table;
 
     <script>
 
-
+//add to cart
 
 var addd = document.getElementById('add');
 var add1 = document.getElementById('add1');
@@ -455,7 +448,7 @@ function adding(){
       }//modal
 
 
-
+//slideshow
     var slideIndex = 0;
     showSlides();
 
@@ -477,18 +470,6 @@ function adding(){
     }
 
 
-//add to Cart
-var noti =document.querySelector('h2');
-var select = document.querySelector('.select');
-var button =document.getElementsByTagName('button');
-for(but of button)
-{
-  but.addEventListener('click', (e)=>{
-    var add = Number(noti.getAttribute('data-count')|| 0);
-    noti.setAttribute('data-count', add + 1);
-    noti.classList.add('zero');
-  })
-}
     </script>
 
   </body>
